@@ -40,7 +40,7 @@ class _AdicionarPlantaScreenState extends State<AdicionarPlantaScreen> {
           child: Column(
             children: [
               DropdownButtonFormField<String>(
-                value: _nomeSelecionado,
+                initialValue: _nomeSelecionado,
                 decoration: const InputDecoration(labelText: 'Nome'),
                 items: opcoesPlantas.map((planta) {
                   return DropdownMenuItem(

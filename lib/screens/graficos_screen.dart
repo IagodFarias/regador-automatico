@@ -29,9 +29,9 @@ class TelaGraficos extends StatelessWidget {
             Expanded(
               child: LineChart(
                 LineChartData(
-                  gridData: FlGridData(show: true),
+                  gridData: const FlGridData(show: true),
                   titlesData: FlTitlesData(
-                    leftTitles: AxisTitles(
+                    leftTitles: const AxisTitles(
                       sideTitles: SideTitles(showTitles: true),
                     ),
                     bottomTitles: AxisTitles(

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'login_screen.dart'; // Para sair, se necessário
+// Para sair, se necessário
 
 class TelaConfiguracoes extends StatefulWidget {
   const TelaConfiguracoes({super.key});

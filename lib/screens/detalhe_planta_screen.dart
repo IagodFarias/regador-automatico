@@ -46,7 +46,7 @@ class TelaDetalhePlanta extends StatelessWidget {
             const SizedBox(height: 20),
 
             // Linha com 3 cards: temperatura, umidade e luminosidade
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 InfoCard(

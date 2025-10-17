@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'screens/login_screen.dart';
+import 'screens/Telasensor.dart'; 
 
 void main() {
+  // O RegadorApp pode ser const se a classe for bem definida.
   runApp(const RegadorApp());
 }
 
@@ -13,6 +14,7 @@ class RegadorApp extends StatelessWidget {
     return MaterialApp(
       title: 'Regador Automático',
       theme: ThemeData(
+        // Constantes para cores e temas são ideais.
         scaffoldBackgroundColor: const Color(0xFF015A84),
         appBarTheme: const AppBarTheme(
           backgroundColor: Color(0xFF015A84),
@@ -27,7 +29,8 @@ class RegadorApp extends StatelessWidget {
           bodyMedium: TextStyle(color: Colors.white),
         ),
       ),
-      home: const TelaLogin(),
+      // CORREÇÃO: Removido o 'const' daqui para que a tela possa ser inicializada dinamicamente.
+      home: const Telasensor(), // aqui você define a tela de sensor como inicial
       debugShowCheckedModeBanner: false,
     );
   }

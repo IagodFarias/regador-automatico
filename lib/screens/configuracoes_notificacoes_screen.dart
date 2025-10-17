@@ -44,7 +44,7 @@ class _TelaConfiguracoesNotificacoesState extends State<TelaConfiguracoesNotific
               child: Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: DropdownButtonFormField<int>(
-                  value: temperaturaSelecionada,
+                  initialValue: temperaturaSelecionada,
                   decoration: const InputDecoration(
                     labelText: 'Temperatura (°C)',
                     labelStyle: TextStyle(color: Colors.white),
@@ -68,7 +68,7 @@ class _TelaConfiguracoesNotificacoesState extends State<TelaConfiguracoesNotific
               child: Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: DropdownButtonFormField<int>(
-                  value: umidadeSelecionada,
+                  initialValue: umidadeSelecionada,
                   decoration: const InputDecoration(
                     labelText: 'Umidade (%)',
                     labelStyle: TextStyle(color: Colors.white),
@@ -92,7 +92,7 @@ class _TelaConfiguracoesNotificacoesState extends State<TelaConfiguracoesNotific
               child: Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: DropdownButtonFormField<int>(
-                  value: luminosidadeSelecionada,
+                  initialValue: luminosidadeSelecionada,
                   decoration: const InputDecoration(
                     labelText: 'Luminosidade (lux)',
                     labelStyle: TextStyle(color: Colors.white),

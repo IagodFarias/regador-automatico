@@ -156,20 +156,20 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
             const SizedBox(height: 24),
 
             // Agora chama sua nova tela
-            MenuButton(
+            const MenuButton(
               imagePath: "assets/images/automacao/horario.png",
               text: "Definir horários de Irrigação",
-              destino: const TelaDefinirHorarios(),
+              destino: TelaDefinirHorarios(),
             ),
-            MenuButton(
+            const MenuButton(
               imagePath: "assets/images/automacao/graficos.png",
               text: "Gráficos",
-              destino: const TelaGraficos(),
+              destino: TelaGraficos(),
             ),
-            MenuButton(
+            const MenuButton(
               imagePath: "assets/images/automacao/relatorio.png",
               text: "Relatório",
-              destino: const TelaRelatorio(),
+              destino: TelaRelatorio(),
             ),
           ],
         ),

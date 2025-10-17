@@ -72,18 +72,18 @@ class _TelaPlantasState extends State<TelaPlantas> {
       child: Column(
       children: [
       // Cabeçalho com foto do usuário
-      UserAccountsDrawerHeader(
-        decoration: const BoxDecoration(
+      const UserAccountsDrawerHeader(
+        decoration: BoxDecoration(
           color: Color(0xFF016A9B),
         ),
-        accountName: const Text(
+        accountName: Text(
           'Usuário',
           style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
         ),
-        accountEmail: const Text('usuario@email.com'),
+        accountEmail: Text('usuario@email.com'),
         currentAccountPicture: CircleAvatar(
           radius: 40,
-          backgroundImage: const AssetImage('assets/images/perfil_padrao.png'),
+          backgroundImage: AssetImage('assets/images/perfil_padrao.png'),
         ),
       ),
       // Lista de opções
