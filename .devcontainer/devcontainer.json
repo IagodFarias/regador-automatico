@@ -1,0 +1,19 @@
+{
+  "name": "Flutter Dev Environment",
+  "build": {
+    "dockerfile": "../dockerfile"
+  },
+  "workspaceFolder": "/app",
+  "runArgs": ["--privileged"],
+  "mounts": ["source=${localWorkspaceFolder},target=/app,type=bind"],
+  "remoteUser": "root",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dart-code.flutter",
+        "dart-code.dart-code",
+        "ms-azuretools.vscode-docker"
+      ]
+    }
+  }
+}
